@@ -1,0 +1,557 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button [ref=e10] [cursor=pointer]:
+          - link [ref=e11]:
+            - /url: /research
+            - img
+        - generic [ref=e12]:
+          - link [ref=e14] [cursor=pointer]:
+            - /url: /research
+            - button [ref=e15]:
+              - img
+          - generic [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /research
+              - button [ref=e19]:
+                - generic [ref=e21]:
+                  - img
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /projects
+              - button [ref=e24]:
+                - generic [ref=e26]:
+                  - img
+            - link [ref=e27] [cursor=pointer]:
+              - /url: /datasets
+              - button [ref=e29]:
+                - generic [ref=e31]:
+                  - img
+      - button "User avatar" [ref=e32] [cursor=pointer]:
+        - img "User avatar" [ref=e33]
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - generic [ref=e40]:
+          - paragraph [ref=e42]: Considering the readings of the file, give me 3 strategies for optimizing efficiency on this gas turbine.
+          - button "gt_2011.csv" [ref=e44]:
+            - generic [ref=e45]: gt_2011.csv
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - paragraph [ref=e49]: I'll analyze the provided gas turbine data file to develop optimization strategies for efficiency improvement.Based on the comprehensive analysis of the gas turbine operational data (7,411 records from 2011), I have identified three critical strategies for optimizing efficiency. The data reveals significant opportunities for performance enhancement through targeted interventions in thermal management, compression systems, and operational parameter optimization.
+            - heading "Three Strategies for Optimizing Gas Turbine Efficiency" [level=2] [ref=e50]
+            - 'heading "Strategy 1: Implement Inlet Air Cooling Systems to Enhance Power Output" [level=3] [ref=e51]'
+            - paragraph [ref=e52]: "The data analysis demonstrates a strong inverse correlation between ambient temperature and energy yield (correlation coefficient: -0.204). Gas turbines operating at lower ambient temperatures (below 11°C) achieve an average energy yield of 140.42 MWh, compared to 131.68 MWh at temperatures between 21-28°C—representing a 6.5% performance differential."
+            - paragraph [ref=e53]:
+              - strong [ref=e54]: "Technical Rationale:"
+              - text: Lower inlet air temperatures increase air density, allowing the compressor to process greater mass flow rates and improving the overall thermodynamic cycle efficiency [WS1]. The data confirms that cold ambient conditions in the first quartile deliver 6.76 MWh higher output than operations in the third quartile temperature range.
+            - paragraph [ref=e55]:
+              - strong [ref=e56]: "Implementation Actions:"
+            - list [ref=e57]:
+              - listitem [ref=e58]: Install evaporative cooling or chiller-based inlet air cooling systems to reduce inlet temperature by 10-15°C during peak ambient temperature periods
+              - listitem [ref=e59]: Prioritize cooling deployment during high-demand periods when the turbine operates at elevated ambient temperatures (above 23°C)
+              - listitem [ref=e60]: Monitor and optimize ultra-high-pressure steam superheat content to prevent wet steam introduction that could damage turbine blades [FS1.1]
+            - paragraph [ref=e61]:
+              - strong [ref=e62]: "Expected Benefits:"
+              - text: Based on the performance differential observed, inlet air cooling can potentially recover 5-7% of energy yield during high-temperature operating periods, translating to 6-9 MWh per operating cycle.
+            - 'heading "Strategy 2: Optimize Turbine Inlet Temperature Operating Parameters for Maximum Energy Conversion" [level=3] [ref=e63]'
+            - paragraph [ref=e64]: Analysis reveals that the top 10% performing operational periods maintain an average turbine inlet temperature (TIT) of 1,100°C, compared to the overall average of 1,084.73°C. TIT exhibits the strongest positive correlation with energy yield (0.905), indicating it is the most critical operational parameter for efficiency optimization.
+            - paragraph [ref=e65]:
+              - strong [ref=e66]: "Technical Rationale:"
+              - text: Turbine inlet temperature directly influences thermal efficiency through the T4/T2 ratio—the temperature leaving the combustor relative to air entering the engine [WS1]. The data demonstrates that maintaining TIT in the optimal range of 1,092-1,101°C maximizes energy conversion efficiency. Higher TIT values enable greater work extraction per unit of fuel while maintaining acceptable temperature differentials across the turbine (averaging 540°C in the dataset).
+            - paragraph [ref=e67]:
+              - strong [ref=e68]: "Implementation Actions:"
+            - list [ref=e69]:
+              - listitem [ref=e70]: Establish operational protocols to maintain TIT within the 1,092-1,101°C optimal range identified from high-performance periods
+              - listitem [ref=e71]: Implement advanced turbine blade cooling technologies to sustain elevated TIT without compromising component integrity [WS1]
+              - listitem [ref=e72]: Deploy process simulation models to continuously monitor suction and discharge temperatures, pressures, flows, and gas composition for proper efficiency estimation [FS1.1]
+              - listitem [ref=e73]: Monitor polytropic efficiency and power consumption trends to detect degradation—increasing stage-wise power consumption with decreasing efficiencies indicates fouling [FS1.1]
+            - paragraph [ref=e74]:
+              - strong [ref=e75]: "Expected Benefits:"
+              - text: Elevating average TIT from 1,084.73°C to the optimal 1,100°C range could improve energy yield by approximately 10-12 MWh per cycle, representing an 8-9% efficiency gain based on observed performance at optimal temperatures.
+            - 'heading "Strategy 3: Enhance Compressor Performance Through Advanced Control Systems and Fouling Mitigation" [level=3] [ref=e76]'
+            - paragraph [ref=e77]: The compressor discharge pressure (CDP) shows the highest correlation with energy yield (0.988), while air filter differential pressure (AFDP) demonstrates substantial variation (2.76-7.32 mbar) that directly impacts compressor inlet conditions. The data indicates that records with high AFDP paradoxically show higher energy yield, suggesting the turbine compensates for fouling by operating at higher power modes—resulting in increased fuel consumption and reduced efficiency.
+            - paragraph [ref=e78]:
+              - strong [ref=e79]: "Technical Rationale:"
+              - text: Compressor performance degradation through fouling reduces air mass flow and compression efficiency, causing operating temperatures to rise, power output to decrease, and heat rate to increase [WS1]. The data shows significant AFDP variability, indicating inconsistent filter condition and potential fouling mechanisms affecting compression stages.
+            - paragraph [ref=e80]:
+              - strong [ref=e81]: "Implementation Actions:"
+            - paragraph [ref=e82]:
+              - emphasis [ref=e83]: "Precision Control Technologies:"
+            - list [ref=e84]:
+              - listitem [ref=e85]: Deploy high-precision antisurge control systems with automatic capacity control to minimize recycle valve operation and reduce unnecessary power consumption [FS1.3]
+              - listitem [ref=e86]: Implement integrated control strategies that enable instantaneous adjustment of control parameters, potentially reducing energy consumption by 15-18% as demonstrated in comparable installations [FS1.3]
+              - listitem [ref=e87]: Modify antisurge control strategies to employ robust algorithms with tighter control margins, expanding the compressor's operating envelope [FS1.3]
+            - paragraph [ref=e88]:
+              - emphasis [ref=e89]: "Fouling Prevention and Monitoring:"
+            - list [ref=e90]:
+              - listitem [ref=e91]: Establish stringent monitoring protocols for compression ratios, thrust bearing temperatures, and axial/radial displacements alongside efficiency metrics [FS1.1]
+              - listitem [ref=e92]: Implement chemical antifoulant treatment programs following laboratory analysis of fouling material chemistry and physical characteristics [FS1.1]
+              - listitem [ref=e93]: Monitor interstage cooler process-side temperature differentials—declining trends at constant load indicate fouling deposits impeding heat transfer [FS1.1]
+              - listitem [ref=e94]: Compare actual versus design heat transfer coefficients when operating at full plant load to identify performance degradation [FS1.1]
+            - paragraph [ref=e95]:
+              - strong [ref=e96]: "Expected Benefits:"
+              - text: Advanced control system implementation has demonstrated 5% average efficiency improvements in ethylene plant applications, with steam savings of 19.3 tons/hr on multi-stage gas compressors [FS1.3]. Combined with effective fouling mitigation, this strategy can prevent the 4-12% efficiency losses typically associated with compressor degradation [WS1].
+            - heading "Conclusion" [level=2] [ref=e97]
+            - paragraph [ref=e98]: "These three integrated strategies address the fundamental efficiency drivers identified in the operational data: thermal management (inlet cooling), combustion optimization (TIT control), and compression system performance (advanced controls and fouling prevention). The data-driven approach confirms that targeting these parameters offers measurable pathways to recovering 10-20% efficiency improvements, with corresponding reductions in fuel consumption and operational costs. Implementation should follow a systematic methodology of site survey, monitoring, assessment, improvement, and control phases to validate results and guarantee performance gains [FS1.3]."
+          - generic [ref=e101]:
+            - heading "Search Results (52)" [level=3] [ref=e102]:
+              - button "Search Results (52)" [expanded] [active] [ref=e103] [cursor=pointer]:
+                - generic [ref=e105]:
+                  - text: Search Results
+                  - generic [ref=e106]: (52)
+                - img
+            - region "Search Results (52)" [ref=e107]:
+              - list [ref=e109]:
+                - listitem [ref=e110]:
+                  - generic [ref=e111]:
+                    - link "Fouling mitigation strategies for process gas compressors in olefins plants" [ref=e112] [cursor=pointer]:
+                      - /url: https://www.hydrocarbonprocessing.com/magazine/2018/october-2018/maintenance-and-reliability/fouling-mitigation-strategies-for-process-gas-compressors-in-olefins-plants/
+                      - generic [ref=e113]:
+                        - text: Fouling mitigation strategies for process gas compressors in olefins plants
+                        - img [ref=e114]
+                    - paragraph
+                - listitem [ref=e116]:
+                  - generic [ref=e117]:
+                    - link "Improve performance monitoring of your turbomachinery" [ref=e118] [cursor=pointer]:
+                      - /url: https://www.hydrocarbonprocessing.com/magazine/2012/august-2012/special-report-fluid-flow-and-rotating-equipment/improve-performance-monitoring-of-your-turbomachinery/
+                      - generic [ref=e119]:
+                        - text: Improve performance monitoring of your turbomachinery
+                        - img [ref=e120]
+                    - paragraph
+                - listitem [ref=e122]:
+                  - generic [ref=e123]:
+                    - link "Optimizing turbomachinery energy savings with control technologies" [ref=e124] [cursor=pointer]:
+                      - /url: https://www.hydrocarbonprocessing.com/magazine/2015/august-2015/turbomachinery/optimizing-turbomachinery-energy-savings-with-control-technologies/
+                      - generic [ref=e125]:
+                        - text: Optimizing turbomachinery energy savings with control technologies
+                        - img [ref=e126]
+                    - paragraph
+                - listitem [ref=e128]:
+                  - generic [ref=e129]:
+                    - link "Combined-cycle gas turbines (2022) | Ipieca" [ref=e130] [cursor=pointer]:
+                      - /url: https://www.ipieca.org/resources/energy-efficiency-compendium/combined-cycle-gas-turbines-2022
+                      - generic [ref=e131]:
+                        - text: Combined-cycle gas turbines (2022) | Ipieca
+                        - img [ref=e132]
+                    - paragraph
+                - listitem [ref=e134]:
+                  - generic [ref=e135]:
+                    - link "Gas Turbine Performance Overview" [ref=e136] [cursor=pointer]:
+                      - /url: https://turbinelogic.com/enc/cog-gt-units/performance/performance
+                      - generic [ref=e137]:
+                        - text: Gas Turbine Performance Overview
+                        - img [ref=e138]
+                    - paragraph
+                - listitem [ref=e140]:
+                  - generic [ref=e141]:
+                    - 'link "Turbine Efficiency Formula: gas turbine calculations" [ref=e142] [cursor=pointer]':
+                      - /url: https://www.araner.com/blog/gas-turbine-efficiency-formula
+                      - generic [ref=e143]:
+                        - text: "Turbine Efficiency Formula: gas turbine calculations"
+                        - img [ref=e144]
+                    - paragraph
+                - listitem [ref=e146]:
+                  - generic [ref=e147]:
+                    - link "GER-3567H - GE Gas Turbine Performance Characteristics" [ref=e148] [cursor=pointer]:
+                      - /url: https://www.gevernova.com/content/dam/gepower-new/global/en_US/downloads/gas-new-site/resources/reference/ger-3567h-ge-gas-turbine-performance-characteristics.pdf
+                      - generic [ref=e149]:
+                        - text: GER-3567H - GE Gas Turbine Performance Characteristics
+                        - img [ref=e150]
+                    - paragraph
+                - listitem [ref=e152]:
+                  - generic [ref=e153]:
+                    - link "Practical Techniques for Modeling Gas Turbine Engine ..." [ref=e154] [cursor=pointer]:
+                      - /url: https://ntrs.nasa.gov/api/citations/20160012485/downloads/20160012485.pdf
+                      - generic [ref=e155]:
+                        - text: Practical Techniques for Modeling Gas Turbine Engine ...
+                        - img [ref=e156]
+                    - paragraph
+                - listitem [ref=e158]:
+                  - generic [ref=e159]:
+                    - link "Turbine Efficiency - an overview | ScienceDirect Topics" [ref=e160] [cursor=pointer]:
+                      - /url: https://www.sciencedirect.com/topics/materials-science/turbine-efficiency
+                      - generic [ref=e161]:
+                        - text: Turbine Efficiency - an overview | ScienceDirect Topics
+                        - img [ref=e162]
+                    - paragraph
+                - listitem [ref=e164]:
+                  - generic [ref=e165]:
+                    - 'link "Enhancing the Energy Performance of a Gas Turbine: Component of a High-Efficiency Cogeneration Plant | MDPI" [ref=e166] [cursor=pointer]':
+                      - /url: https://www.mdpi.com/1996-1073/17/19/4860
+                      - generic [ref=e167]:
+                        - text: "Enhancing the Energy Performance of a Gas Turbine: Component of a High-Efficiency Cogeneration Plant | MDPI"
+                        - img [ref=e168]
+                    - paragraph
+                - listitem [ref=e170]:
+                  - generic [ref=e171]:
+                    - link "Gas Turbines Gain in Efficiency and Capacity Factor - ASME" [ref=e172] [cursor=pointer]:
+                      - /url: https://www.asme.org/topics-resources/content/blog-gas-power-plants-are-efficiency-giants
+                      - generic [ref=e173]:
+                        - text: Gas Turbines Gain in Efficiency and Capacity Factor - ASME
+                        - img [ref=e174]
+                    - paragraph
+                - listitem [ref=e176]:
+                  - generic [ref=e177]:
+                    - link "Performance of Simple Cycle Gas Turbines" [ref=e178] [cursor=pointer]:
+                      - /url: https://turbinelogic.com/enc/gas-turbine-jet-engine-simple-cycle-operation/performance
+                      - generic [ref=e179]:
+                        - text: Performance of Simple Cycle Gas Turbines
+                        - img [ref=e180]
+                    - paragraph
+                - listitem [ref=e182]:
+                  - generic [ref=e183]:
+                    - link "A Complete Guide to Measurements and Metrics for the SGT6-2000E Turbine | Allied Power Group" [ref=e184] [cursor=pointer]:
+                      - /url: https://alliedpg.com/latest-articles/sgt6-2000e-turbine-measurements-metrics/
+                      - generic [ref=e185]:
+                        - text: A Complete Guide to Measurements and Metrics for the SGT6-2000E Turbine | Allied Power Group
+                        - img [ref=e186]
+                    - paragraph
+                - listitem [ref=e188]:
+                  - generic [ref=e189]:
+                    - link "Turbine Thermal Efficiency - an overview | ScienceDirect Topics" [ref=e190] [cursor=pointer]:
+                      - /url: https://www.sciencedirect.com/topics/engineering/turbine-thermal-efficiency
+                      - generic [ref=e191]:
+                        - text: Turbine Thermal Efficiency - an overview | ScienceDirect Topics
+                        - img [ref=e192]
+                    - paragraph
+                - listitem [ref=e194]:
+                  - generic [ref=e195]:
+                    - link "Gas Turbine Efficiency - An Overview | Allied Power Group" [ref=e196] [cursor=pointer]:
+                      - /url: https://alliedpg.com/latest-articles/gas-turbine-efficiency/
+                      - generic [ref=e197]:
+                        - text: Gas Turbine Efficiency - An Overview | Allied Power Group
+                        - img [ref=e198]
+                    - paragraph
+                - listitem [ref=e200]:
+                  - generic [ref=e201]:
+                    - link "(PDF) The methodology of the gas turbine efficiency calculation" [ref=e202] [cursor=pointer]:
+                      - /url: https://www.researchgate.net/publication/316337118_The_methodology_of_the_gas_turbine_efficiency_calculation
+                      - generic [ref=e203]:
+                        - text: (PDF) The methodology of the gas turbine efficiency calculation
+                        - img [ref=e204]
+                    - paragraph
+                - listitem [ref=e206]:
+                  - generic [ref=e207]:
+                    - link "Efficiency of Gas Turbines - Petrotech | Control Systems Solutions" [ref=e208] [cursor=pointer]:
+                      - /url: https://petrotechinc.com/efficiency-of-gas-turbines/
+                      - generic [ref=e209]:
+                        - text: Efficiency of Gas Turbines - Petrotech | Control Systems Solutions
+                        - img [ref=e210]
+                    - paragraph
+                - listitem [ref=e212]:
+                  - generic [ref=e213]:
+                    - 'link "Appendix F: Worked Example for Calculating the Performance of a Gas Turbine - Handbook of Electrical Engineering - Wiley Online Library" [ref=e214] [cursor=pointer]':
+                      - /url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/0470013893.app6
+                      - generic [ref=e215]:
+                        - text: "Appendix F: Worked Example for Calculating the Performance of a Gas Turbine - Handbook of Electrical Engineering - Wiley Online Library"
+                        - img [ref=e216]
+                    - paragraph
+                - listitem [ref=e218]:
+                  - generic [ref=e219]:
+                    - link "Turbine Efficiency Formula | ARANER" [ref=e220] [cursor=pointer]:
+                      - /url: https://www.araner.com/blog/gas-turbine-efficiency-calculation-avoid-higher-cost-in-fuel-consumption
+                      - generic [ref=e221]:
+                        - text: Turbine Efficiency Formula | ARANER
+                        - img [ref=e222]
+                    - paragraph
+                - listitem [ref=e224]:
+                  - generic [ref=e225]:
+                    - link "7.4.1.1. Thermal Efficiency" [ref=e226] [cursor=pointer]:
+                      - /url: https://www.grida.no/climate/ipcc/aviation/096.htm
+                      - generic [ref=e227]:
+                        - text: 7.4.1.1. Thermal Efficiency
+                        - img [ref=e228]
+                    - paragraph
+                - listitem [ref=e230]:
+                  - generic [ref=e231]:
+                    - link "Thermal Efficiency - Brayton Cycle | Equation | nuclear-power.com" [ref=e232] [cursor=pointer]:
+                      - /url: https://www.nuclear-power.com/nuclear-engineering/thermodynamics/thermodynamic-cycles/brayton-cycle-gas-turbine-engine/thermal-efficiency-brayton-cycle/
+                      - generic [ref=e233]:
+                        - text: Thermal Efficiency - Brayton Cycle | Equation | nuclear-power.com
+                        - img [ref=e234]
+                    - paragraph
+                - listitem [ref=e236]:
+                  - generic [ref=e237]:
+                    - link "Aspects of Gas Turbine Thermal Efficiency | Mechanical Engineering | ASME Digital Collection" [ref=e238] [cursor=pointer]:
+                      - /url: https://asmedigitalcollection.asme.org/memagazineselect/article/142/09/54/1086488/Aspects-of-Gas-Turbine-Thermal-Efficiency
+                      - generic [ref=e239]:
+                        - text: Aspects of Gas Turbine Thermal Efficiency | Mechanical Engineering | ASME Digital Collection
+                        - img [ref=e240]
+                    - paragraph
+                - listitem [ref=e242]:
+                  - generic [ref=e243]:
+                    - link "Heat rate, by prime mover and energy source" [ref=e244] [cursor=pointer]:
+                      - /url: https://www.eia.gov/electricity/annual/html/epa_08_02.html
+                      - generic [ref=e245]:
+                        - text: Heat rate, by prime mover and energy source
+                        - img [ref=e246]
+                    - paragraph
+                - listitem [ref=e248]:
+                  - generic [ref=e249]:
+                    - link "Natural gas-fired electricity conversion efficiency grows as coal remains stable - U.S. Energy Information Administration (EIA)" [ref=e250] [cursor=pointer]:
+                      - /url: https://www.eia.gov/todayinenergy/detail.php?id=32572
+                      - generic [ref=e251]:
+                        - text: Natural gas-fired electricity conversion efficiency grows as coal remains stable - U.S. Energy Information Administration (EIA)
+                        - img [ref=e252]
+                    - paragraph
+                - listitem [ref=e254]:
+                  - generic [ref=e255]:
+                    - 'link "Power plant and calculations: Calculation of heat rate & efficiency of the power plant" [ref=e256] [cursor=pointer]':
+                      - /url: https://www.powerplantandcalculations.com/2020/05/understanding-of-heat-rate-and.html
+                      - generic [ref=e257]:
+                        - text: "Power plant and calculations: Calculation of heat rate & efficiency of the power plant"
+                        - img [ref=e258]
+                    - paragraph
+                - listitem [ref=e260]:
+                  - generic [ref=e261]:
+                    - link "Frequently Asked Questions (FAQs) - U.S. Energy Information Administration (EIA)" [ref=e262] [cursor=pointer]:
+                      - /url: https://www.eia.gov/tools/faqs/faq.php?id=107&t=3
+                      - generic [ref=e263]:
+                        - text: Frequently Asked Questions (FAQs) - U.S. Energy Information Administration (EIA)
+                        - img [ref=e264]
+                    - paragraph
+                - listitem [ref=e266]:
+                  - generic [ref=e267]:
+                    - link "What Is the Worth of 1 Btu/kWh of Heat Rate?" [ref=e268] [cursor=pointer]:
+                      - /url: https://www.powermag.com/what-is-the-worth-of-1-btukwh-of-heat-rate/
+                      - generic [ref=e269]:
+                        - text: What Is the Worth of 1 Btu/kWh of Heat Rate?
+                        - img [ref=e270]
+                    - paragraph
+                - listitem [ref=e272]:
+                  - generic [ref=e273]:
+                    - link "Common Causes of Poor Heat Rate in Gas Turbines | Allied Power Group" [ref=e274] [cursor=pointer]:
+                      - /url: https://alliedpg.com/latest-articles/common-causes-of-poor-heat-rate-in-gas-turbines/
+                      - generic [ref=e275]:
+                        - text: Common Causes of Poor Heat Rate in Gas Turbines | Allied Power Group
+                        - img [ref=e276]
+                    - paragraph
+                - listitem [ref=e278]:
+                  - generic [ref=e279]:
+                    - link "Heat Rate Basics – Technology Transfer Services" [ref=e280] [cursor=pointer]:
+                      - /url: https://www.techtransfer.com/resources/wiki/heat-rate-basics/
+                      - generic [ref=e281]:
+                        - text: Heat Rate Basics – Technology Transfer Services
+                        - img [ref=e282]
+                    - paragraph
+                - listitem [ref=e284]:
+                  - generic [ref=e285]:
+                    - link "Translate Heat Rate and Power Output into Fuel Cost and Revenue" [ref=e286] [cursor=pointer]:
+                      - /url: https://turboefficiency.com/insights/translating-heat-rate-and-power-output-into-fuel-cost-and-revenue/
+                      - generic [ref=e287]:
+                        - text: Translate Heat Rate and Power Output into Fuel Cost and Revenue
+                        - img [ref=e288]
+                    - paragraph
+                - listitem [ref=e290]:
+                  - generic [ref=e291]:
+                    - link "Heat Rate Formula - Definition, Solved Example and FAQs" [ref=e292] [cursor=pointer]:
+                      - /url: https://www.vedantu.com/formula/heat-rate-formula
+                      - generic [ref=e293]:
+                        - text: Heat Rate Formula - Definition, Solved Example and FAQs
+                        - img [ref=e294]
+                    - paragraph
+                - listitem [ref=e296]:
+                  - generic [ref=e297]:
+                    - link "Power plant efficiency - Wikipedia" [ref=e298] [cursor=pointer]:
+                      - /url: https://en.wikipedia.org/wiki/Power_plant_efficiency
+                      - generic [ref=e299]:
+                        - text: Power plant efficiency - Wikipedia
+                        - img [ref=e300]
+                    - paragraph
+                - listitem [ref=e302]:
+                  - generic [ref=e303]:
+                    - link "Isentropic Efficiency - Turbine/Compressor/Nozzle | nuclear-power.com" [ref=e304] [cursor=pointer]:
+                      - /url: https://www.nuclear-power.com/nuclear-engineering/thermodynamics/thermodynamic-processes/isentropic-process/isentropic-efficiency-turbinecompressornozzle/
+                      - generic [ref=e305]:
+                        - text: Isentropic Efficiency - Turbine/Compressor/Nozzle | nuclear-power.com
+                        - img [ref=e306]
+                    - paragraph
+                - listitem [ref=e308]:
+                  - generic [ref=e309]:
+                    - link "Compressor Isentropic Efficiency - an overview | ScienceDirect Topics" [ref=e310] [cursor=pointer]:
+                      - /url: https://www.sciencedirect.com/topics/engineering/compressor-isentropic-efficiency
+                      - generic [ref=e311]:
+                        - text: Compressor Isentropic Efficiency - an overview | ScienceDirect Topics
+                        - img [ref=e312]
+                    - paragraph
+                - listitem [ref=e314]:
+                  - generic [ref=e315]:
+                    - link "Isentropic Efficiency - an overview | ScienceDirect Topics" [ref=e316] [cursor=pointer]:
+                      - /url: https://www.sciencedirect.com/topics/engineering/isentropic-efficiency
+                      - generic [ref=e317]:
+                        - text: Isentropic Efficiency - an overview | ScienceDirect Topics
+                        - img [ref=e318]
+                    - paragraph
+                - listitem [ref=e320]:
+                  - generic [ref=e321]:
+                    - link "(PDF) Detailed analysis of the effect of the turbine and compressor isentropic efficiency on the thermal and exergy efficiency of a Brayton cycle" [ref=e322] [cursor=pointer]:
+                      - /url: https://www.researchgate.net/publication/270463218_Detailed_analysis_of_the_effect_of_the_turbine_and_compressor_isentropic_efficiency_on_the_thermal_and_exergy_efficiency_of_a_Brayton_cycle
+                      - generic [ref=e323]:
+                        - text: (PDF) Detailed analysis of the effect of the turbine and compressor isentropic efficiency on the thermal and exergy efficiency of a Brayton cycle
+                        - img [ref=e324]
+                    - paragraph
+                - listitem [ref=e326]:
+                  - generic [ref=e327]:
+                    - link "Compressor Thermodynamics" [ref=e328] [cursor=pointer]:
+                      - /url: https://www.grc.nasa.gov/www/k-12/VirtualAero/BottleRocket/airplane/compth.html
+                      - generic [ref=e329]:
+                        - text: Compressor Thermodynamics
+                        - img [ref=e330]
+                    - paragraph
+                - listitem [ref=e332]:
+                  - generic [ref=e333]:
+                    - link "(PDF) Effects of Isentropic Efficiency and Enhancing Strategies on Gas Turbine Performance" [ref=e334] [cursor=pointer]:
+                      - /url: https://www.researchgate.net/publication/274302038_Effects_of_Isentropic_Efficiency_and_Enhancing_Strategies_on_Gas_Turbine_Performance
+                      - generic [ref=e335]:
+                        - text: (PDF) Effects of Isentropic Efficiency and Enhancing Strategies on Gas Turbine Performance
+                        - img [ref=e336]
+                    - paragraph
+                - listitem [ref=e338]:
+                  - generic [ref=e339]:
+                    - link "Isentropic Efficiency of Compressor - Vaia" [ref=e340] [cursor=pointer]:
+                      - /url: https://www.vaia.com/en-us/explanations/engineering/engineering-thermodynamics/isentropic-efficiency-of-compressor/
+                      - generic [ref=e341]:
+                        - text: Isentropic Efficiency of Compressor - Vaia
+                        - img [ref=e342]
+                    - paragraph
+                - listitem [ref=e344]:
+                  - generic [ref=e345]:
+                    - link "Effects of Isentropic Efficiency and Enhancing Strategies on Gas Turbine Performance | Journal of Mechanical Engineering and Sciences" [ref=e346] [cursor=pointer]:
+                      - /url: https://journal.ump.edu.my/jmes/article/view/7972
+                      - generic [ref=e347]:
+                        - text: Effects of Isentropic Efficiency and Enhancing Strategies on Gas Turbine Performance | Journal of Mechanical Engineering and Sciences
+                        - img [ref=e348]
+                    - paragraph
+                - listitem [ref=e350]:
+                  - generic [ref=e351]:
+                    - 'link "Isentropic Efficiency: Nozzle, Equation & Applications" [ref=e352] [cursor=pointer]':
+                      - /url: https://www.studysmarter.co.uk/explanations/engineering/engineering-thermodynamics/isentropic-efficiency/
+                      - generic [ref=e353]:
+                        - text: "Isentropic Efficiency: Nozzle, Equation & Applications"
+                        - img [ref=e354]
+                    - paragraph
+                - listitem [ref=e356]:
+                  - generic [ref=e357]:
+                    - link "Isentropic Efficiency - Turbine/Compressor/Nozzle | nuclear-power.net" [ref=e358] [cursor=pointer]:
+                      - /url: https://www.nuclear-power.net/nuclear-engineering/thermodynamics/thermodynamic-processes/isentropic-process/isentropic-efficiency-turbinecompressornozzle/
+                      - generic [ref=e359]:
+                        - text: Isentropic Efficiency - Turbine/Compressor/Nozzle | nuclear-power.net
+                        - img [ref=e360]
+                    - paragraph
+                - listitem [ref=e362]:
+                  - generic [ref=e363]:
+                    - link "Gas turbine performance prognostic for condition-based maintenance - ScienceDirect" [ref=e364] [cursor=pointer]:
+                      - /url: https://www.sciencedirect.com/science/article/abs/pii/S0306261909000506
+                      - generic [ref=e365]:
+                        - text: Gas turbine performance prognostic for condition-based maintenance - ScienceDirect
+                        - img [ref=e366]
+                    - paragraph
+                - listitem [ref=e368]:
+                  - generic [ref=e369]:
+                    - link "Intelligent Performance Degradation Prediction of Light-Duty Gas Turbine Engine Based on Limited Data | MDPI" [ref=e370] [cursor=pointer]:
+                      - /url: https://www.mdpi.com/2073-8994/17/2/277
+                      - generic [ref=e371]:
+                        - text: Intelligent Performance Degradation Prediction of Light-Duty Gas Turbine Engine Based on Limited Data | MDPI
+                        - img [ref=e372]
+                    - paragraph
+                - listitem [ref=e374]:
+                  - generic [ref=e375]:
+                    - 'link "Performance-Based Gas Turbine Health Monitoring, Diagnostics, and Prognostics: A Survey | IEEE Journals & Magazine | IEEE Xplore" [ref=e376] [cursor=pointer]':
+                      - /url: https://ieeexplore.ieee.org/document/8356238/
+                      - generic [ref=e377]:
+                        - text: "Performance-Based Gas Turbine Health Monitoring, Diagnostics, and Prognostics: A Survey | IEEE Journals & Magazine | IEEE Xplore"
+                        - img [ref=e378]
+                    - paragraph
+                - listitem [ref=e380]:
+                  - generic [ref=e381]:
+                    - link "1 Enhancing Turbine Performance Degradation Prediction with" [ref=e382] [cursor=pointer]:
+                      - /url: https://papers.phmsociety.org/index.php/phmconf/article/download/2580/1538
+                      - generic [ref=e383]:
+                        - text: 1 Enhancing Turbine Performance Degradation Prediction with
+                        - img [ref=e384]
+                    - paragraph
+                - listitem [ref=e386]:
+                  - generic [ref=e387]:
+                    - 'link "Performance-based health monitoring, diagnostics and prognostics for condition-based maintenance of gas turbines: A review - ScienceDirect" [ref=e388] [cursor=pointer]':
+                      - /url: https://www.sciencedirect.com/science/article/abs/pii/S0306261917304415
+                      - generic [ref=e389]:
+                        - text: "Performance-based health monitoring, diagnostics and prognostics for condition-based maintenance of gas turbines: A review - ScienceDirect"
+                        - img [ref=e390]
+                    - paragraph
+                - listitem [ref=e392]:
+                  - generic [ref=e393]:
+                    - link "Gas Turbine Performance Monitoring Software" [ref=e394] [cursor=pointer]:
+                      - /url: https://www.poweronline.com/doc/gas-turbine-performance-monitoring-software-0001
+                      - generic [ref=e395]:
+                        - text: Gas Turbine Performance Monitoring Software
+                        - img [ref=e396]
+                    - paragraph
+                - listitem [ref=e398]:
+                  - generic [ref=e399]:
+                    - link "(PDF) Degradation of gas turbine performance in natural gas service" [ref=e400] [cursor=pointer]:
+                      - /url: https://www.researchgate.net/publication/229395103_Degradation_of_gas_turbine_performance_in_natural_gas_service
+                      - generic [ref=e401]:
+                        - text: (PDF) Degradation of gas turbine performance in natural gas service
+                        - img [ref=e402]
+                    - paragraph
+                - listitem [ref=e404]:
+                  - generic [ref=e405]:
+                    - link "A Physics Informed Machine Learning Approach for Performance Degradation Monitoring of Gas Turbine | PHM Society Asia-Pacific Conference" [ref=e406] [cursor=pointer]:
+                      - /url: https://papers.phmsociety.org/index.php/phmap/article/view/3723
+                      - generic [ref=e407]:
+                        - text: A Physics Informed Machine Learning Approach for Performance Degradation Monitoring of Gas Turbine | PHM Society Asia-Pacific Conference
+                        - img [ref=e408]
+                    - paragraph
+                - listitem [ref=e410]:
+                  - generic [ref=e411]:
+                    - 'link "Performance-based health monitoring, diagnostics and prognostics for condition-based maintenance of gas turbines: A review" [ref=e412] [cursor=pointer]':
+                      - /url: https://ideas.repec.org/a/eee/appene/v198y2017icp122-144.html
+                      - generic [ref=e413]:
+                        - text: "Performance-based health monitoring, diagnostics and prognostics for condition-based maintenance of gas turbines: A review"
+                        - img [ref=e414]
+                    - paragraph
+                - listitem [ref=e416]:
+                  - generic [ref=e417]:
+                    - link "Degradation of gas turbine performance in natural gas service - ScienceDirect" [ref=e418] [cursor=pointer]:
+                      - /url: https://www.sciencedirect.com/science/article/abs/pii/S1875510009000250
+                      - generic [ref=e419]:
+                        - text: Degradation of gas turbine performance in natural gas service - ScienceDirect
+                        - img [ref=e420]
+                    - paragraph
+      - generic [ref=e422]:
+        - generic [ref=e425]:
+          - textbox "Ask me anything..." [ref=e426]
+          - generic [ref=e427]:
+            - generic [ref=e428]:
+              - button [ref=e429] [cursor=pointer]:
+                - img
+              - button [ref=e430] [cursor=pointer]:
+                - img
+              - generic [ref=e431]:
+                - generic [ref=e432]:
+                  - img [ref=e433]
+                  - generic [ref=e435]: Web Search
+                  - img [ref=e436] [cursor=pointer]
+                - generic [ref=e438]:
+                  - img [ref=e440]
+                  - generic [ref=e445]: Hydrocarbon Processing
+                  - img [ref=e446] [cursor=pointer]
+            - button [ref=e448]:
+              - img
+        - generic [ref=e450]:
+          - button "New Chat" [ref=e451] [cursor=pointer]:
+            - img
+            - text: New Chat
+          - generic [ref=e452]:
+            - button "Files" [ref=e453] [cursor=pointer]:
+              - img
+              - text: Files
+            - button "History" [ref=e454] [cursor=pointer]:
+              - img
+              - text: History
+  - region "Notifications alt+T"
+  - alert [ref=e455]
+```
