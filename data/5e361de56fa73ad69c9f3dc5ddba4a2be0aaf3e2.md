@@ -1,0 +1,274 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e6]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - button [ref=e10] [cursor=pointer]:
+          - link [ref=e11]:
+            - /url: /research
+            - img
+        - generic [ref=e12]:
+          - link [ref=e14] [cursor=pointer]:
+            - /url: /research
+            - button [ref=e15]:
+              - img
+          - generic [ref=e16]:
+            - link [ref=e17] [cursor=pointer]:
+              - /url: /research
+              - button [ref=e19]:
+                - generic [ref=e21]:
+                  - img
+            - link [ref=e22] [cursor=pointer]:
+              - /url: /projects
+              - button [ref=e24]:
+                - generic [ref=e26]:
+                  - img
+            - link [ref=e27] [cursor=pointer]:
+              - /url: /datasets
+              - button [ref=e29]:
+                - generic [ref=e31]:
+                  - img
+      - button "User avatar" [ref=e32] [cursor=pointer]:
+        - img "User avatar" [ref=e33]
+    - generic [ref=e37]:
+      - generic [ref=e39]:
+        - heading "What can I help with, Nicholas?" [level=1] [ref=e40]
+        - generic [ref=e42]:
+          - textbox "Ask me anything..." [ref=e43]
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - button [ref=e46] [cursor=pointer]:
+                - img
+              - button [ref=e47] [cursor=pointer]:
+                - img
+              - generic [ref=e49]:
+                - img [ref=e50]
+                - generic [ref=e52]: Web Search
+                - img [ref=e53] [cursor=pointer]
+            - button [ref=e55]:
+              - img
+        - generic [ref=e56]:
+          - button "New Research" [disabled]:
+            - img
+            - text: New Research
+          - button "Create Spreadsheet" [disabled]:
+            - img
+            - text: Create Spreadsheet
+          - button "Create Document" [ref=e57] [cursor=pointer]:
+            - img
+            - text: Create Document
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - heading "Recent Activity" [level=2] [ref=e60]
+          - generic [ref=e61]:
+            - button "All" [ref=e62]
+            - button "Chats" [ref=e63]
+            - button "Files" [ref=e64]
+            - button "Projects" [ref=e65]
+            - button "Research" [ref=e66]
+        - generic [ref=e67]:
+          - 'button "Latest Aramco News Updates 4 minutes ago Latest message #0 is completed" [ref=e68] [cursor=pointer]':
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - img [ref=e72]
+                  - generic [ref=e74]: Latest Aramco News Updates
+                - generic [ref=e75]: 4 minutes ago
+              - generic [ref=e76]: "Latest message #0 is completed"
+          - 'button "CO Emissions First Last Average Values 18 minutes ago Latest message #0 is completed" [ref=e77] [cursor=pointer]':
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]:
+                  - img [ref=e81]
+                  - generic [ref=e83]: CO Emissions First Last Average Values
+                - generic [ref=e84]: 18 minutes ago
+              - generic [ref=e85]: "Latest message #0 is completed"
+          - 'button "Latest Aramco News Updates 20 minutes ago Latest message #0 is completed" [ref=e86] [cursor=pointer]':
+            - generic [ref=e87]:
+              - generic [ref=e88]:
+                - generic [ref=e89]:
+                  - img [ref=e90]
+                  - generic [ref=e92]: Latest Aramco News Updates
+                - generic [ref=e93]: 20 minutes ago
+              - generic [ref=e94]: "Latest message #0 is completed"
+          - button "Batch Test Project 28 minutes ago Testing batch upload" [ref=e95] [cursor=pointer]:
+            - generic [ref=e96]:
+              - generic [ref=e97]:
+                - generic [ref=e98]:
+                  - img [ref=e99]
+                  - generic [ref=e101]: Batch Test Project
+                - generic [ref=e102]: 28 minutes ago
+              - generic [ref=e103]: Testing batch upload
+          - 'button "CO Emission First Last Average Values about 2 hours ago Latest message #0 is completed" [ref=e104] [cursor=pointer]':
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - generic [ref=e107]:
+                  - img [ref=e108]
+                  - generic [ref=e110]: CO Emission First Last Average Values
+                - generic [ref=e111]: about 2 hours ago
+              - generic [ref=e112]: "Latest message #0 is completed"
+          - 'button "CO Emission Statistics Analysis about 2 hours ago Latest message #0 is completed" [ref=e113] [cursor=pointer]':
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]:
+                  - img [ref=e117]
+                  - generic [ref=e119]: CO Emission Statistics Analysis
+                - generic [ref=e120]: about 2 hours ago
+              - generic [ref=e121]: "Latest message #0 is completed"
+          - 'button "CO Emission First Last Average Values about 2 hours ago Latest message #0 is completed" [ref=e122] [cursor=pointer]':
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - generic [ref=e125]:
+                  - img [ref=e126]
+                  - generic [ref=e128]: CO Emission First Last Average Values
+                - generic [ref=e129]: about 2 hours ago
+              - generic [ref=e130]: "Latest message #0 is completed"
+          - 'button "Latest Aramco News Updates about 2 hours ago Latest message #0 is completed" [ref=e131] [cursor=pointer]':
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134]:
+                  - img [ref=e135]
+                  - generic [ref=e137]: Latest Aramco News Updates
+                - generic [ref=e138]: about 2 hours ago
+              - generic [ref=e139]: "Latest message #0 is completed"
+          - 'button "CO Emission First Last Average Values about 3 hours ago Latest message #0 is completed" [ref=e140] [cursor=pointer]':
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - generic [ref=e143]:
+                  - img [ref=e144]
+                  - generic [ref=e146]: CO Emission First Last Average Values
+                - generic [ref=e147]: about 3 hours ago
+              - generic [ref=e148]: "Latest message #0 is completed"
+          - 'button "Latest News About Aramco about 3 hours ago Latest message #0 is completed" [ref=e149] [cursor=pointer]':
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - img [ref=e153]
+                  - generic [ref=e155]: Latest News About Aramco
+                - generic [ref=e156]: about 3 hours ago
+              - generic [ref=e157]: "Latest message #0 is completed"
+          - 'button "CO Emission First Last Average Values about 5 hours ago Latest message #0 is completed" [ref=e158] [cursor=pointer]':
+            - generic [ref=e159]:
+              - generic [ref=e160]:
+                - generic [ref=e161]:
+                  - img [ref=e162]
+                  - generic [ref=e164]: CO Emission First Last Average Values
+                - generic [ref=e165]: about 5 hours ago
+              - generic [ref=e166]: "Latest message #0 is completed"
+          - 'button "Latest Aramco News Update about 5 hours ago Latest message #0 is completed" [ref=e167] [cursor=pointer]':
+            - generic [ref=e168]:
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - img [ref=e171]
+                  - generic [ref=e173]: Latest Aramco News Update
+                - generic [ref=e174]: about 5 hours ago
+              - generic [ref=e175]: "Latest message #0 is completed"
+          - 'button "CO Emission First Last Average Values about 5 hours ago Latest message #0 is completed" [ref=e176] [cursor=pointer]':
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - generic [ref=e179]:
+                  - img [ref=e180]
+                  - generic [ref=e182]: CO Emission First Last Average Values
+                - generic [ref=e183]: about 5 hours ago
+              - generic [ref=e184]: "Latest message #0 is completed"
+          - 'button "Latest Aramco News Updates about 5 hours ago Latest message #0 is completed" [ref=e185] [cursor=pointer]':
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - img [ref=e189]
+                  - generic [ref=e191]: Latest Aramco News Updates
+                - generic [ref=e192]: about 5 hours ago
+              - generic [ref=e193]: "Latest message #0 is completed"
+          - 'button "Latest Aramco News Updates about 6 hours ago Latest message #0 is completed" [ref=e194] [cursor=pointer]':
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197]:
+                  - img [ref=e198]
+                  - generic [ref=e200]: Latest Aramco News Updates
+                - generic [ref=e201]: about 6 hours ago
+              - generic [ref=e202]: "Latest message #0 is completed"
+          - 'button "First Last Average CO Emission Values about 6 hours ago Latest message #0 is completed" [ref=e203] [cursor=pointer]':
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - img [ref=e207]
+                  - generic [ref=e209]: First Last Average CO Emission Values
+                - generic [ref=e210]: about 6 hours ago
+              - generic [ref=e211]: "Latest message #0 is completed"
+          - 'button "Latest Aramco News Updates about 6 hours ago Latest message #0 is completed" [ref=e212] [cursor=pointer]':
+            - generic [ref=e213]:
+              - generic [ref=e214]:
+                - generic [ref=e215]:
+                  - img [ref=e216]
+                  - generic [ref=e218]: Latest Aramco News Updates
+                - generic [ref=e219]: about 6 hours ago
+              - generic [ref=e220]: "Latest message #0 is completed"
+          - 'button "CO Emission First Last Average Values about 6 hours ago Latest message #0 is completed" [ref=e221] [cursor=pointer]':
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - generic [ref=e224]:
+                  - img [ref=e225]
+                  - generic [ref=e227]: CO Emission First Last Average Values
+                - generic [ref=e228]: about 6 hours ago
+              - generic [ref=e229]: "Latest message #0 is completed"
+          - 'button "Latest News About Aramco about 6 hours ago Latest message #0 is completed" [ref=e230] [cursor=pointer]':
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - generic [ref=e233]:
+                  - img [ref=e234]
+                  - generic [ref=e236]: Latest News About Aramco
+                - generic [ref=e237]: about 6 hours ago
+              - generic [ref=e238]: "Latest message #0 is completed"
+          - 'button "Project Files Subject Summary about 6 hours ago Latest message #0 is completed" [ref=e239] [cursor=pointer]':
+            - generic [ref=e240]:
+              - generic [ref=e241]:
+                - generic [ref=e242]:
+                  - img [ref=e243]
+                  - generic [ref=e245]: Project Files Subject Summary
+                - generic [ref=e246]: about 6 hours ago
+              - generic [ref=e247]: "Latest message #0 is completed"
+          - 'button "CO Emission Statistical Values Analysis about 6 hours ago Latest message #0 is completed" [ref=e248] [cursor=pointer]':
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - generic [ref=e251]:
+                  - img [ref=e252]
+                  - generic [ref=e254]: CO Emission Statistical Values Analysis
+                - generic [ref=e255]: about 6 hours ago
+              - generic [ref=e256]: "Latest message #0 is completed"
+          - 'button "Latest News About Aramco about 6 hours ago Latest message #0 is completed" [ref=e257] [cursor=pointer]':
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - generic [ref=e260]:
+                  - img [ref=e261]
+                  - generic [ref=e263]: Latest News About Aramco
+                - generic [ref=e264]: about 6 hours ago
+              - generic [ref=e265]: "Latest message #0 is completed"
+          - 'button "Latest Petrobras News Update about 6 hours ago Latest message #1 is completed" [ref=e266] [cursor=pointer]':
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - img [ref=e270]
+                  - generic [ref=e272]: Latest Petrobras News Update
+                - generic [ref=e273]: about 6 hours ago
+              - generic [ref=e274]: "Latest message #1 is completed"
+          - 'button "File Summary Request about 7 hours ago Latest message #1 is completed" [ref=e275] [cursor=pointer]':
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - generic [ref=e278]:
+                  - img [ref=e279]
+                  - generic [ref=e281]: File Summary Request
+                - generic [ref=e282]: about 7 hours ago
+              - generic [ref=e283]: "Latest message #1 is completed"
+          - 'button "Latest Petrobras News Update about 10 hours ago Latest message #0 is completed" [ref=e284] [cursor=pointer]':
+            - generic [ref=e285]:
+              - generic [ref=e286]:
+                - generic [ref=e287]:
+                  - img [ref=e288]
+                  - generic [ref=e290]: Latest Petrobras News Update
+                - generic [ref=e291]: about 10 hours ago
+              - generic [ref=e292]: "Latest message #0 is completed"
+  - region "Notifications alt+T"
+  - alert [ref=e294]
+```
